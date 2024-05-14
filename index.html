@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рестораны захиалгын систем</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Рестораны захиалгын систем</h1>
+    <h2>Захиалга хийх</h2>
+    <form id="reservationForm">
+      <label for="name">Нэр:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="date">Огноо:</label>
+      <input type="date" id="date" name="date" required><br>
+
+      <label for="time">Цаг:</label>
+      <input type="time" id="time" name="time" required><br>
+
+      <label for="partySize">Захиалгын хэмжээ:</label>
+      <input type="number" id="partySize" name="partySize" min="1" required><br>
+
+      <label for="phoneNumber">Утасны дугаар:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+
+      <label for="email">Имэйл:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <button type="submit">Захиалга хийх</button>
+    </form>
+
+    <h2>Одоогийн захиалга</h2>
+    <table id="reservationTable">
+      <thead>
+        <tr>
+          <th>Нэр</th>
+          <th>Огноо</th>
+          <th>Цаг</th>
+          <th>Захиалгын хэмжээ:</th>
+          <th>Утасны дугаар</th>
+          <th>Имэйл</th>
+        </tr>
+      </thead>
+      <tbody id="reservationBody">
+        <!-- Захиалга энд динамик байдлаар нэмэгдэх болно -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
